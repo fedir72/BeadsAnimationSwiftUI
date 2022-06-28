@@ -8,13 +8,52 @@
 import SwiftUI
 
 struct SpinnerView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+  
+  var maximumSector: Double
+  @Binding var leavesCount: Int
+  @State var rotateState: Bool = true
+
+
+  var body: some View {
+    VStack(spacing: 50) {
+    
+      ZStack {
+        BeadsView(radius: 150, lineWidth: 3)
+        ForEach(0..<leavesCount) { index in
+          
+         let angle = -maximumSector/Double(leavesCount)*Double(index)
+         LeafView(angle: angle,
+                   radius: 150,
+                   isRotate: .constant(rotateState))
+            .rotationEffect(.degrees(angle))
+         
+        }
+      }
+      VStack {
+      Button("eject pearls") {
+        self.rotateState.toggle()
+      }
+      .font(.system(size: 35))
+      .padding(.bottom,10)
+      if !rotateState {
+        Button("count beads") {
+          
+        }
+        .font(.system(size: 35))
+        .foregroundColor(.red)
+        }
+      }
     }
+  }
+
+  func animate() {
+  }
 }
 
+
 struct SpinnerView_Previews: PreviewProvider {
-    static var previews: some View {
-        SpinnerView()
-    }
+  static var previews: some View {
+    SpinnerView(maximumSector: 300, leavesCount: .constant(8), rotateState: true)
+  }
 }
+

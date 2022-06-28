@@ -8,13 +8,23 @@
 import SwiftUI
 
 struct BeadsView: View {
+  
+  var radius: CGFloat
+  var lineWidth: CGFloat
+  var circle = Circle()
+
+  
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+      Circle()
+        .stroke(Color.gray, lineWidth: lineWidth)
+        .foregroundColor(.blue)
+        .frame(width: radius*2, height: radius*2)
+
     }
 }
 
 struct BeadsView_Previews: PreviewProvider {
     static var previews: some View {
-        BeadsView()
+      BeadsView(radius: 150, lineWidth: 4)
     }
 }

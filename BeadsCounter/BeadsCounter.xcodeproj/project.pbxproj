@@ -14,6 +14,10 @@
 		BDA5ADD2286B5399002481FE /* LeafView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA5ADD1286B5399002481FE /* LeafView.swift */; };
 		BDA5ADD4286B53C9002481FE /* BeadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA5ADD3286B53C9002481FE /* BeadsView.swift */; };
 		BDA5ADD6286B5408002481FE /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA5ADD5286B5408002481FE /* SpinnerView.swift */; };
+		BDC0A760286C456F00FBD602 /* AnaliticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC0A75F286C456F00FBD602 /* AnaliticsView.swift */; };
+		BDC0A763286C53A300FBD602 /* DiagramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC0A762286C53A300FBD602 /* DiagramView.swift */; };
+		BDC0A765286C596200FBD602 /* CircleDiagrammView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC0A764286C596200FBD602 /* CircleDiagrammView.swift */; };
+		BDC485DA286C2912001581A0 /* PulsationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC485D9286C2912001581A0 /* PulsationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		BDA5ADD1286B5399002481FE /* LeafView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeafView.swift; sourceTree = "<group>"; };
 		BDA5ADD3286B53C9002481FE /* BeadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadsView.swift; sourceTree = "<group>"; };
 		BDA5ADD5286B5408002481FE /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
+		BDC0A75F286C456F00FBD602 /* AnaliticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnaliticsView.swift; sourceTree = "<group>"; };
+		BDC0A762286C53A300FBD602 /* DiagramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagramView.swift; sourceTree = "<group>"; };
+		BDC0A764286C596200FBD602 /* CircleDiagrammView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleDiagrammView.swift; sourceTree = "<group>"; };
+		BDC485D9286C2912001581A0 /* PulsationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,8 @@
 		BDA5ADC1286B5307002481FE /* BeadsCounter */ = {
 			isa = PBXGroup;
 			children = (
+				BDC485D9286C2912001581A0 /* PulsationView.swift */,
+				BDC0A761286C52E100FBD602 /* Diagrams */,
 				BDA5ADD0286B533E002481FE /* Views */,
 				BDA5ADD7286B547C002481FE /* Assets */,
 				BDA5ADC8286B5309002481FE /* Preview Content */,
@@ -90,6 +100,16 @@
 				BDA5ADC6286B5309002481FE /* Assets.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		BDC0A761286C52E100FBD602 /* Diagrams */ = {
+			isa = PBXGroup;
+			children = (
+				BDC0A75F286C456F00FBD602 /* AnaliticsView.swift */,
+				BDC0A762286C53A300FBD602 /* DiagramView.swift */,
+				BDC0A764286C596200FBD602 /* CircleDiagrammView.swift */,
+			);
+			path = Diagrams;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,10 +182,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDC485DA286C2912001581A0 /* PulsationView.swift in Sources */,
 				BDA5ADD4286B53C9002481FE /* BeadsView.swift in Sources */,
 				BDA5ADD6286B5408002481FE /* SpinnerView.swift in Sources */,
 				BDA5ADD2286B5399002481FE /* LeafView.swift in Sources */,
+				BDC0A765286C596200FBD602 /* CircleDiagrammView.swift in Sources */,
+				BDC0A763286C53A300FBD602 /* DiagramView.swift in Sources */,
 				BDA5ADC5286B5307002481FE /* ContentView.swift in Sources */,
+				BDC0A760286C456F00FBD602 /* AnaliticsView.swift in Sources */,
 				BDA5ADC3286B5307002481FE /* BeadsCounterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

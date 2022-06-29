@@ -6,12 +6,11 @@
 //
 
 import SwiftUI
-
 @main
 struct BeadsCounterApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AnaliticsView()
         }
     }
 }

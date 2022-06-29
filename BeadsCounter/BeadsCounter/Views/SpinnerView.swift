@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct SpinnerView: View {
   
   var maximumSector: Double
@@ -20,15 +21,15 @@ struct SpinnerView: View {
       ZStack {
         BeadsView(radius: 150, lineWidth: 3)
         ForEach(0..<leavesCount) { index in
-          
          let angle = -maximumSector/Double(leavesCount)*Double(index)
          LeafView(angle: angle,
-                   radius: 150,
+                  radius: 150,
                    isRotate: .constant(rotateState))
             .rotationEffect(.degrees(angle))
-         
         }
       }
+        
+        
       VStack {
       Button("eject pearls") {
         self.rotateState.toggle()
@@ -53,7 +54,9 @@ struct SpinnerView: View {
 
 struct SpinnerView_Previews: PreviewProvider {
   static var previews: some View {
-    SpinnerView(maximumSector: 300, leavesCount: .constant(8), rotateState: true)
+      SpinnerView(maximumSector: 300,
+                  leavesCount: .constant(12),
+                  rotateState: true)
   }
 }
 
